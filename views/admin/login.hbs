@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celulandia</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <link rel="stylesheet" href="/stylesheets/normalize.css">
+    <link rel="stylesheet" href="/stylesheets/admin.css">
+</head>
+<bodys>
+    <header>
+        <div class="holder holderheader">
+            <img class="logo" src="/images/logocelularesx.png" width="100" alt="Celulares X">
+            <h1>Celulandia</h1>
+        </div>
+    </header>
+<main class="holder">
+
+    <h1>{{title}}</h1>
+    {{#if conocido}}
+        <p>Hola {{nombre}} <a href="/salir">Salir</a></p>
+    {{/if}}
+
+    {{#unless conocido}}
+    <p>No se quien sos, ¿podrías poner tu nombre para ingresar?</p>
+    <form action="/ingresar" method="post">
+        <input type="text" name="nombre"><button>Ingresar</button>
+    </form>
+    {{/unless}}
+
+</main>
+<footer>
+        <p>Diseñado por Lucas Peluso - &copy;2021</p>
+    </footer>
+</body>
+</html>   
