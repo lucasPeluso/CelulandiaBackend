@@ -408,6 +408,7 @@ h4{
 .grid-footer{
     width: 1000px;
     margin: auto;
+    padding-top: 1em;
 
     display: grid;
     grid-template-columns: repeat(4, 1fr);
